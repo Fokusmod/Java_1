@@ -1,9 +1,16 @@
 package Lesson6Homework;
 
 public class Cat extends Animal {
+    private static int count;
+
     public Cat(String name, String color) {
         super(name, color);
+        count++;
+
+
+
     }
+
 
     @Override
     public void run(int leng) {
@@ -22,6 +29,10 @@ public class Cat extends Animal {
 
     public void song (){
         System.out.println("Meow...Meow...Meow...");
+    }
+
+    public static void count  (){
+        System.out.println("Количество кошек или котов - " + count);
     }
 }
 
