@@ -13,10 +13,16 @@ public class Main {
         animal4.sail(200);
         animal2.run(1500);
         animal.sail(150);
-
         System.out.println();
-
         ((Cat) animal2).song();
+
+Animal.count();
+Cat.count();
+Dog.count();
+
+
+
+
     }
 
 
